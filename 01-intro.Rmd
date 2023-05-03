@@ -1,6 +1,10 @@
 # Hello bookdown 
 
-![](img/enrredado1.gif)
+
+```{r, echo=FALSE, out.width="50%", fig.align = "center"}
+knitr::include_graphics("img/enrredado1.gif")
+```
+
 
 All chapters start with a first-level heading followed by your chapter title, like the line above. There should be only one first-level heading (`#`) per .Rmd file.
 

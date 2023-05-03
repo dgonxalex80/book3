@@ -1,5 +1,29 @@
 # Cross-references {#cross}
 
+
+```{r, echo=FALSE}
+# tomada de:
+# http://pj.freefaculty.org/R/WorkingExamples/plot-3d-MVNormal-1.R
+library("mvtnorm")
+
+N=50
+x <- seq(-3,3, length=N)
+y <- seq(-3,3,length=N)
+z <- matrix(0, N, N)
+for (i in 1:N) for (j in 1:N) {
+  z[i,j]=dmvnorm(c(x[i],y[j]), c(0,0),
+        matrix(c(1,0.5,0.5,1),2,2))}
+ persp(x,y,z,theta=20, phi=15, 
+       xlab="x", 
+       ylab="y", 
+       zlab="f(x,y)",
+       scale=TRUE,
+       expand=.4,
+       axes=TRUE,
+       col="#db524f")
+```
+
+
 Cross-references make it easier for your readers to find and link to elements in your book.
 
 ## Chapters and sub-chapters
