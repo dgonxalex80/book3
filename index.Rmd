@@ -58,3 +58,14 @@ knitr::write_bib(c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown'
 ), 'packages.bib')
 ```
+
+```{r, echo=FALSE, out.width="50%", fig.align = "left"}
+knitr::include_graphics("img/papagallo.png")
+```
+
+
+
+
+
+
+
